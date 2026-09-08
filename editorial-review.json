@@ -1,0 +1,10 @@
+{
+  "manuscript_sha256": "66085671aea6e7c639018834eacd07f3de56d0c8b1f9f50a53a5dae498ca94d5",
+  "full_read": true,
+  "argument_review": true,
+  "structure_review": true,
+  "voice_review": true,
+  "source_review": true,
+  "final_read": true,
+  "notes": "Full read of the built PDF, all eleven pages, and of the manuscript source. The review changed the paper four times. First, the ordering claim in the brief said the private and social orders were close to reversed; computing the rank correlation gave 0.556, positive, so the claim was withdrawn and replaced by the narrower one the arithmetic supports, that the five ways of staying are the first five cut while a public evaluation would cut parking first. Second, the first draft cited eight of thirty bibliography entries and read as a formal model with a critical-theory veneer; two sections were added that give each tradition a specific job and take the count to thirty of thirty. Third, a claim binding 1.000 to the ensemble's maximum rank correlation failed the gate, correctly: the 1.000 in that sentence was the uniform-appropriability reference, not the maximum, and the sentence now reports the actual maximum of 0.822. Fourth, twelve voice diagnostics were triaged and all twelve rewritten, and four sentences were shortened to break a run of thirty-one without a short one. The abstract is 248 words and was written after the argument."
+}

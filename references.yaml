@@ -1,0 +1,257 @@
+# CSL references with stable IDs; cite using Pandoc [@id] syntax.
+# Journal articles and chapters were resolved through Crossref against their
+# DOIs. Books that carry no Crossref DOI are recorded without one and their
+# identity is documented in sources.md. The three Piggie Park records are
+# primary legal sources read directly.
+references:
+  - id: aalbers2016
+    type: book
+    title: "The financialization of housing: a political economy approach"
+    author: [{family: Aalbers, given: "Manuel B."}]
+    publisher: Routledge
+    publisher-place: London
+    issued: {date-parts: [[2016]]}
+    DOI: 10.4324/9781315668666
+  - id: bataille1988
+    type: book
+    title: "The accursed share, volume I: consumption"
+    author: [{family: Bataille, given: Georges}]
+    translator: [{family: Hurley, given: Robert}]
+    publisher: Zone Books
+    publisher-place: New York
+    issued: {date-parts: [[1988]]}
+    original-date: {date-parts: [[1949]]}
+  - id: benjamin1999
+    type: book
+    title: "The arcades project"
+    author: [{family: Benjamin, given: Walter}]
+    translator: [{family: Eiland, given: Howard}, {family: McLaughlin, given: Kevin}]
+    publisher: Belknap Press of Harvard University Press
+    publisher-place: Cambridge, MA
+    issued: {date-parts: [[1999]]}
+  - id: bourgeois1981
+    type: article-journal
+    title: "On the measurement of organizational slack"
+    author: [{family: Bourgeois, given: "L. J."}]
+    container-title: Academy of Management Review
+    volume: "6"
+    issue: "1"
+    page: "29-39"
+    issued: {date-parts: [[1981]]}
+    DOI: 10.2307/257138
+  - id: cobble1992
+    type: book
+    title: "Dishing it out: waitresses and their unions in the twentieth century"
+    author: [{family: Cobble, given: "Dorothy Sue"}]
+    publisher: University of Illinois Press
+    publisher-place: Urbana
+    issued: {date-parts: [[1992]]}
+    DOI: 10.5406/j.ctt3fh3vh
+  - id: cyert1963
+    type: book
+    title: "A behavioral theory of the firm"
+    author: [{family: Cyert, given: "Richard M."}, {family: March, given: "James G."}]
+    publisher: Prentice-Hall
+    publisher-place: Englewood Cliffs, NJ
+    issued: {date-parts: [[1963]]}
+  - id: dika2003
+    type: chapter
+    title: "Reconsidering the nostalgia film"
+    author: [{family: Dika, given: Vera}]
+    container-title: "Recycled culture in contemporary art and film: the uses of nostalgia"
+    publisher: Cambridge University Press
+    publisher-place: Cambridge
+    page: "89-121"
+    issued: {date-parts: [[2003]]}
+    DOI: 10.1017/cbo9780511814297.004
+  - id: foxblack2011
+    type: chapter
+    title: "The rise and decline of drive-in cinemas in the United States"
+    author: [{family: Fox, given: Mark}, {family: Black, given: Grant}]
+    container-title: Handbook on the economics of leisure
+    editor: [{family: Cameron, given: Samuel}]
+    publisher: Edward Elgar
+    publisher-place: Cheltenham
+    issued: {date-parts: [[2011]]}
+    DOI: 10.4337/9780857930569.00023
+  - id: fraser2016
+    type: article-journal
+    title: "Contradictions of capital and care"
+    author: [{family: Fraser, given: Nancy}]
+    container-title: New Left Review
+    volume: "100"
+    page: "99-117"
+    issued: {date-parts: [[2016]]}
+  - id: gorz1973
+    type: article-magazine
+    title: "The social ideology of the motorcar"
+    author: [{family: Gorz, given: "André"}]
+    container-title: Le Sauvage
+    issued: {date-parts: [[1973]]}
+  - id: harvey1982
+    type: book
+    title: "The limits to capital"
+    author: [{family: Harvey, given: David}]
+    publisher: Basil Blackwell
+    publisher-place: Oxford
+    issued: {date-parts: [[1982]]}
+  - id: horkheimer1947
+    type: book
+    title: "Eclipse of reason"
+    author: [{family: Horkheimer, given: Max}]
+    publisher: Oxford University Press
+    publisher-place: New York
+    issued: {date-parts: [[1947]]}
+  - id: jakle1999
+    type: book
+    title: "Fast food: roadside restaurants in the automobile age"
+    author: [{family: Jakle, given: "John A."}, {family: Sculle, given: "Keith A."}]
+    publisher: Johns Hopkins University Press
+    publisher-place: Baltimore
+    issued: {date-parts: [[1999]]}
+  - id: jameson1984
+    type: article-journal
+    title: "Postmodernism, or the cultural logic of late capitalism"
+    author: [{family: Jameson, given: Fredric}]
+    container-title: New Left Review
+    volume: "I/146"
+    page: "53-92"
+    issued: {date-parts: [[1984]]}
+  - id: lefebvre1991
+    type: book
+    title: "The production of space"
+    author: [{family: Lefebvre, given: Henri}]
+    translator: [{family: Nicholson-Smith, given: Donald}]
+    publisher: Blackwell
+    publisher-place: Oxford
+    issued: {date-parts: [[1991]]}
+    original-date: {date-parts: [[1974]]}
+  - id: marx1867
+    type: book
+    title: "Capital: a critique of political economy, volume I"
+    author: [{family: Marx, given: Karl}]
+    publisher: Verlag von Otto Meissner
+    publisher-place: Hamburg
+    issued: {date-parts: [[1867]]}
+  - id: marx1894
+    type: book
+    title: "Capital: a critique of political economy, volume III"
+    author: [{family: Marx, given: Karl}]
+    editor: [{family: Engels, given: Friedrich}]
+    publisher: Verlag von Otto Meissner
+    publisher-place: Hamburg
+    issued: {date-parts: [[1894]]}
+  - id: newman1966
+    type: legal_case
+    title: "Newman v. Piggie Park Enterprises, Inc."
+    container-title: "F. Supp."
+    volume: "256"
+    page: "941"
+    authority: United States District Court for the District of South Carolina, Columbia Division
+    number: "Civ. A. No. AC-1605"
+    issued: {date-parts: [[1966, 7, 28]]}
+  - id: newman1967
+    type: legal_case
+    title: "Newman v. Piggie Park Enterprises, Inc."
+    container-title: "F.2d"
+    volume: "377"
+    page: "433"
+    authority: United States Court of Appeals for the Fourth Circuit
+    issued: {date-parts: [[1967, 4, 24]]}
+  - id: newman1968
+    type: legal_case
+    title: "Newman v. Piggie Park Enterprises, Inc."
+    container-title: "U.S."
+    volume: "390"
+    page: "400"
+    authority: Supreme Court of the United States
+    number: "No. 339"
+    issued: {date-parts: [[1968, 3, 18]]}
+  - id: oldenburg1989
+    type: book
+    title: "The great good place: cafes, coffee shops, community centers, beauty parlors, general stores, bars, hangouts, and how they get you through the day"
+    author: [{family: Oldenburg, given: Ray}]
+    publisher: Paragon House
+    publisher-place: New York
+    issued: {date-parts: [[1989]]}
+  - id: ritzer1983
+    type: article-journal
+    title: "The 'McDonaldization' of society"
+    author: [{family: Ritzer, given: George}]
+    container-title: Journal of American Culture
+    volume: "6"
+    issue: "1"
+    page: "100-107"
+    issued: {date-parts: [[1983]]}
+    DOI: 10.1111/j.1542-734x.1983.0601_100.x
+  - id: ritzer2018
+    type: article-journal
+    title: "The changing nature of consumption and the intensification of McDonaldization in the digital age"
+    author: [{family: Ritzer, given: George}, {family: Miles, given: Steven}]
+    container-title: Journal of Consumer Culture
+    volume: "19"
+    issue: "1"
+    page: "3-20"
+    issued: {date-parts: [[2018]]}
+    DOI: 10.1177/1469540518818628
+  - id: shelleryurry2000
+    type: article-journal
+    title: "The city and the car"
+    author: [{family: Sheller, given: Mimi}, {family: Urry, given: John}]
+    container-title: International Journal of Urban and Regional Research
+    volume: "24"
+    issue: "4"
+    page: "737-757"
+    issued: {date-parts: [[2000]]}
+    DOI: 10.1111/1468-2427.00276
+  - id: smith1979
+    type: article-journal
+    title: "Toward a theory of gentrification: a back to the city movement by capital, not people"
+    author: [{family: Smith, given: Neil}]
+    container-title: Journal of the American Planning Association
+    volume: "45"
+    issue: "4"
+    page: "538-548"
+    issued: {date-parts: [[1979]]}
+    DOI: 10.1080/01944367908977002
+  - id: sorin2020
+    type: book
+    title: "Driving while Black: African American travel and the road to civil rights"
+    author: [{family: Sorin, given: Gretchen}]
+    publisher: Liveright
+    publisher-place: New York
+    issued: {date-parts: [[2020]]}
+  - id: teece1986
+    type: article-journal
+    title: "Profiting from technological innovation: implications for integration, collaboration, licensing and public policy"
+    author: [{family: Teece, given: "David J."}]
+    container-title: Research Policy
+    volume: "15"
+    issue: "6"
+    page: "285-305"
+    issued: {date-parts: [[1986]]}
+    DOI: 10.1016/0048-7333(86)90027-2
+  - id: urry2004
+    type: article-journal
+    title: "The 'system' of automobility"
+    author: [{family: Urry, given: John}]
+    container-title: "Theory, Culture & Society"
+    volume: "21"
+    issue: "4-5"
+    page: "25-39"
+    issued: {date-parts: [[2004]]}
+    DOI: 10.1177/0263276404046059
+  - id: whyte1980
+    type: book
+    title: "The social life of small urban spaces"
+    author: [{family: Whyte, given: "William H."}]
+    publisher: The Conservation Foundation
+    publisher-place: Washington, DC
+    issued: {date-parts: [[1980]]}
+  - id: williams1973
+    type: book
+    title: "The country and the city"
+    author: [{family: Williams, given: Raymond}]
+    publisher: Chatto and Windus
+    publisher-place: London
+    issued: {date-parts: [[1973]]}

@@ -1,0 +1,9 @@
+[project]
+name = "the-canary-in-the-parking-lot-sim"
+version = "0.1.0"
+description = "Computing which functions a site sheds under rent pressure, in what order, and whether removing them removes any ecological burden"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "matplotlib>=3.8",
+]
