@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "id": "sites",
-  "started": "2026-09-22T19:54:42.212685+00:00",
-  "finished": "2026-09-22T19:54:43.228768+00:00",
+  "started": "2026-09-08T07:40:50.471851+00:00",
+  "finished": "2026-09-08T07:40:51.537534+00:00",
   "command": [
     "uv",
     "run",
@@ -25,14 +25,14 @@
   "additional_inputs": [],
   "inputs": {
     "simulation/analyses.py": "fc2774b508a73b3ae9e3412348fd98a8a1f01996a4d7e88cf905340647c79209",
-    "simulation/figures.py": "e59b7204bc766858d296d76d159351e05910e280e4328505ad9543bca08a2e24",
+    "simulation/figures.py": "f0356b8b88ca2926b14cf133f7bb5308d3b9d89da30e7250cf84c5a1b536a055",
     "simulation/pyproject.toml": "ef83b4977525b958a4f231971272602006b374629f56d5fe0b8f70a5ca6fae65",
     "simulation/run_all.py": "2790c87710e4c12efcf87be190c834a70ea558b66a5a3e19e13805a524f7d606",
     "simulation/uv.lock": "caff9186267ee67912311050d717daff5be9c87ea47a2e2bcebbfcf26d26e400"
   },
   "artifacts": {
     "simulation/output/results.json": "82b6667400f7c1486cf806cd518ff4a2b4da75d525fa4cead3ff86a1a71c6f5f",
-    "simulation/output/figures/order.png": "bfa3e48ad78b933a99a9ba59a207ae4184a6f673dc6aab22c30bd9c32cfa0436",
-    "simulation/output/figures/burden.png": "2f647250847dc579b21aad68d80d4d8a06719697e2908fae2ed1f31e24f372a7"
+    "simulation/output/figures/order.png": "a602d5b7664975e7c65ad1ffad58e77af082c1504efa08e23c62396a74b0f679",
+    "simulation/output/figures/burden.png": "7058c0e148bedefc4a83e39afd50b0b3dfdc1ecda253002e5e7b8fb8fd032173"
   }
 }

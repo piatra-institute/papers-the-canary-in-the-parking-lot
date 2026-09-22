@@ -2,6 +2,15 @@
 
 Dated log of editorial passes and verification runs. Newest first.
 
+## 2026-09-22 — prose revision
+
+Prose revision against the house standards. No computation, number, quotation, citation or conclusion changed.
+  - Manuscript rewritten paragraph by paragraph; prose shortened from about 4,000 to about 3,000 words. Structure is now introduction, related work, model, six results and discussion sections, and limitations.
+  - Removed three references to the unpublished origin chat, twelve self-references, meta-commentary, epigrammatic closers, and contrast framing ('rather than' from fourteen instances to none).
+  - Corrected a factual error in the published figure 1(c), whose title said the first removal was at the top when it is plotted at the bottom.
+  - Figure titles and annotations rewritten to state quantities; figures regenerated and the execution re-recorded (26 invariants pass).
+  - Claim ledger re-bound; all 52 bindings pass. README rewritten as one line per paragraph with the new abstract.
+
 ## 2026-09-08 — v1, complete
 
 Scope: the whole paper, four mechanisms, the documentary anchor and the evidence base, from the seed chat and its 7,400-word working draft to the built PDF and the bound claim ledger.

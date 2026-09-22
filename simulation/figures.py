@@ -39,16 +39,16 @@ def plot_order(res, path):
     ax.set_yticks(y)
     ax.set_yticklabels([ranks[i]["label"] for i in ids], fontsize=7.6)
     ax.set_xscale("log")
-    ax.set_xlabel("ground rent at which the function stops paying for itself",
+    ax.set_xlabel("ground rent at which the function is removed",
                   fontsize=8.5)
     ax.axhline(4.5, color=INK, lw=0.9, ls="--")
-    ax.text(0.97, 0.47, "the five ways of staying,\nall of them below the line",
+    ax.text(0.97, 0.47, "ways of staying\n(below the line)",
             transform=ax.transAxes, ha="right", va="top", fontsize=7.6, color=INK,
             bbox=dict(facecolor="white", edgecolor="none", alpha=0.9, pad=2.2))
-    ax.set_title("a. the order in which a site sheds what it does",
+    ax.set_title("a. order of removal",
                  fontsize=9.5, color=INK, loc="left")
     ax.legend(handles=[Patch(facecolor=AMBER, label="a way of staying"),
-                       Patch(facecolor=BLUE, label="the transaction and its plant")],
+                       Patch(facecolor=BLUE, label="transactional function")],
               loc="lower right", fontsize=7.6, frameon=True, framealpha=0.92,
               facecolor="white", edgecolor="none")
 
@@ -68,14 +68,14 @@ def plot_order(res, path):
     ax.axvline(L["closure_rent"], color=RED, lw=0.9, ls="--")
     ax.axvspan(L["all_presence_gone_rent"], L["closure_rent"], color=GRID, alpha=0.5)
     ax.text(L["all_presence_gone_rent"] * 1.30, 0.90,
-            f"nowhere left to stay\nat rent {L['all_presence_gone_rent']:.1f}",
+            f"last way of staying\nremoved at {L['all_presence_gone_rent']:.1f}",
             fontsize=7.6, color=AMBER, va="top")
-    ax.text(L["closure_rent"] * 0.97, 0.60, f"the doors close\nat rent "
+    ax.text(L["closure_rent"] * 0.97, 0.60, f"closure at\nrent "
             f"{L['closure_rent']:.1f}", fontsize=7.6, color=RED, ha="right")
     ax.set_xlabel("ground rent", fontsize=8.5)
     ax.set_ylabel("share remaining", fontsize=8.5)
     ax.set_ylim(-0.03, 1.06)
-    ax.set_title("b. the place empties long before it shuts", fontsize=9.5,
+    ax.set_title("b. value and profit under rising rent", fontsize=9.5,
                  color=INK, loc="left")
     ax.legend(fontsize=7.6, frameon=True, framealpha=0.92, facecolor="white",
               edgecolor="none", loc="upper right")
@@ -91,12 +91,11 @@ def plot_order(res, path):
                 ha="right", va="center")
     ax.set_xlim(-2.6, 3.05)
     ax.set_xticks([0, 1.6])
-    ax.set_xticklabels(["cut by\nthe operator", "cut by\nsocial value"], fontsize=7.6)
+    ax.set_xticklabels(["operator\norder", "social\norder"], fontsize=7.6)
     ax.set_yticks([])
     ax.grid(False)
-    ax.text(1.74, 3.4, f"τ = {O['kendall_tau']:.3f}\n(1.000 when every\nfunction is "
-            "equally\nchargeable)", fontsize=7.4, color=INK, va="top")
-    ax.set_title("c. the two orders differ, first cut at the top", fontsize=9.5,
+    ax.text(1.74, 3.4, f"τ = {O['kendall_tau']:.3f}\n(1.000 with uniform\nappropriability)", fontsize=7.4, color=INK, va="top")
+    ax.set_title("c. private and social order, first removed at bottom", fontsize=9.5,
                  color=INK, loc="left")
 
     fig.tight_layout()
@@ -112,9 +111,9 @@ def plot_burden(res, path):
     ax = axes[0]
     _style(ax)
     base = B["base"]
-    parts = [("the journey", base["travel"], GRAY),
-             ("the food", base["food"], GREEN),
-             ("the site", base["site"], AMBER)]
+    parts = [("travel", base["travel"], GRAY),
+             ("food", base["food"], GREEN),
+             ("site", base["site"], AMBER)]
     left = 0.0
     for label, val, col in parts:
         ax.barh([0], [val], left=left, color=col, height=0.5)
@@ -122,15 +121,14 @@ def plot_burden(res, path):
             ax.text(left + val / 2, 0, f"{label}\n{val:.2f}", ha="center",
                     va="center", fontsize=8, color="white")
         left += val
-    ax.annotate(f"the site is {base['design_controlled_share']:.3f} of the total,\n"
-                f"and redesign moves only part of it",
+    ax.annotate(f"site: {base['design_controlled_share']:.3f} of total",
                 xy=(base["travel"] + base["food"] + base["site"] / 2, 0.28),
                 xytext=(1.5, 0.68), fontsize=7.8, color=INK,
                 arrowprops=dict(arrowstyle="->", color=INK, lw=0.9))
     ax.set_ylim(-0.6, 0.95)
     ax.set_yticks([])
     ax.set_xlabel("kg CO$_2$e per meal occasion, stipulated", fontsize=8.5)
-    ax.set_title("a. the operator does not pay for the journey", fontsize=9.5,
+    ax.set_title("a. burden of one meal occasion", fontsize=9.5,
                  color=INK, loc="left")
 
     # b. the sweep
@@ -150,9 +148,9 @@ def plot_burden(res, path):
     cb.set_label("per cent", fontsize=8)
     ax.set_xlabel("round trip to reach the site, km", fontsize=8.5)
     ax.set_ylabel("kg CO$_2$e per km", fontsize=8.5)
-    ax.set_title("b. removing every way of staying, in per cent of burden saved",
+    ax.set_title("b. burden reduction from removing ways of staying (%)",
                  fontsize=9.5, color=INK, loc="left")
-    ax.text(0.97, 0.06, f"never above {B['max_reduction']*100:.2f}% across "
+    ax.text(0.97, 0.06, f"maximum {B['max_reduction']*100:.2f}% over "
             f"{B['grid_cells']} cells", transform=ax.transAxes, ha="right",
             fontsize=7.6, color=INK,
             bbox=dict(facecolor="white", edgecolor="none", alpha=0.88, pad=2.4))
@@ -163,20 +161,19 @@ def plot_burden(res, path):
     n = Q["notch"]
     th = [x["threshold"] for x in n]
     ax.plot(th, [x["duty_as_share_of_private_return"] for x in n], color=BLUE,
-            lw=1.8, label="what dodging the duty costs the operator")
+            lw=1.8, label="private return given up")
     ax.plot(th, [x["social_destroyed_share"] for x in n], color=GREEN, lw=1.8,
-            label="what dodging it costs everyone else")
+            label="social value lost")
     ax.axvline(Q["focal_threshold"], color=INK, lw=0.9, ls=":")
-    ax.set_xlabel("share of the site that may be given over to staying\n"
-                  "before the duty attaches", fontsize=8.5)
+    ax.set_xlabel("threshold share of the site given to staying", fontsize=8.5)
     ax.set_ylabel("share", fontsize=8.5)
-    ax.set_title("c. a duty keyed to staying is cheap to dodge", fontsize=9.5,
+    ax.set_title("c. cost of avoiding a threshold duty", fontsize=9.5,
                  color=INK, loc="left")
     ax.legend(fontsize=7.6, frameon=True, framealpha=0.92, facecolor="white",
               edgecolor="none", loc="center left")
-    ax.annotate(f"at a tenth, a duty worth {Q['focal_duty_share']:.3f} of return\n"
-                f"buys the removal of "
-                f"{Q['focal_social_destroyed_share']:.3f} of social value",
+    ax.annotate(f"threshold 0.10: private return {Q['focal_duty_share']:.3f},\n"
+                f"social value "
+                f"{Q['focal_social_destroyed_share']:.3f}",
                 xy=(Q["focal_threshold"], Q["focal_duty_share"]),
                 xytext=(0.515, 0.435), ha="right", va="top", fontsize=7.4, color=INK,
                 arrowprops=dict(arrowstyle="->", color=INK, lw=0.9),

@@ -1,6 +1,6 @@
 {
-  "pdf_sha256": "553ba9f2abc345cd453fe4c7d4a04337c19accf41d19935f53d7bbab474d16c1",
-  "page_count": 11,
+  "pdf_sha256": "6fdd8f79957e5231870074d99108f3924787c969d06576b8e47fd1f2b4c4c27e",
+  "page_count": 10,
   "pages_inspected": [
     1,
     2,
@@ -11,9 +11,8 @@
     7,
     8,
     9,
-    10,
-    11
+    10
   ],
   "all_pages_inspected": true,
-  "notes": "Every page rendered and read at full size. Title page, abstract and all nine sections set correctly; running head reads 'The Canary in the Parking Lot' and pagination is continuous. Both figures were inspected in page context at final scale as well as as source PNGs, and both were revised during review. Figure 1 on page 5: panel (a)'s annotation originally said the ways of staying were above the dividing line when they render below it, and was corrected and given an opaque background; panel (b)'s legend covered the rent-13.2 annotation and was moved with the labels shortened; panel (c)'s row labels collided with numeric y-ticks and with the axis label, so the ticks and the label were removed, the two columns were pushed apart, and the direction of the ordering moved into the panel title. Figure 2 on page 8: panel (c)'s annotation first sat on the blue line and then under the legend, and was resolved by moving the legend to centre-left and anchoring the annotation with a leader line. Legal citations were reworked in references.yaml during this pass because the reporter sat inside the case title and rendered as '941 1966'; the reporter now occupies container-title, volume and page, so inline citations read '(Newman v. Piggie Park Enterprises, Inc. 1966)' and the bibliography carries the full reporter citation. Bibliography runs pages 10 to 11, all 30 entries present, DOIs unbroken. No overfull lines, no clipped figures, no orphaned headings. Rebuild note: after the eleven-page inspection the metadata status was flipped from built to published, which is a hashed build input, so the PDF was re-rendered and its hash changed from 0f6623cbf50e to 553ba9f2abc3. The rendered text was compared before and after with pdftotext and is byte-for-byte identical, and the page count is unchanged at 11; only the publication status differs. No page was re-inspected because no page changed."
+  "notes": "All ten pages of the rebuilt PDF were read at full size. Title, abstract and eleven body sections set correctly with descriptive headings; running head and pagination are continuous. Both figures were regenerated. Their panel titles had carried the old aphoristic headings and their annotations editorial phrasing ('the doors close', 'a duty keyed to staying is cheap to dodge', 'what dodging it costs everyone else'); these now state quantities. Inspection also found a factual error in the published figure 1: panel (c) was labelled 'first cut at the top' although the operator's first removal is plotted at the bottom, an axis inversion having been dropped during an earlier layout fix. The label now reads 'first removed at bottom' and the orientation was confirmed against the results file. Panel (a) of figure 2 now uses the same terms as the text (travel, food, site). Figures were inspected as source images and in page context on pages 5 and 7. The bibliography runs pages 8 to 10 with all 30 entries. No overfull lines, clipped figures or orphaned headings."
 }

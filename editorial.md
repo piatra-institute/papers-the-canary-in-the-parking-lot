@@ -18,15 +18,17 @@ The court record. This is the find of the paper and it was not in the seed in us
 
 ## Reverse outline
 
-1. *What the drive-in is evidence of* — states the separation of the three judgements, names appropriability, and distinguishes it from organizational slack before that word can mislead. Declares the model's status before any result appears.
-2. *The tradition this argues with* — six roles, each given a specific job rather than a citation. Added during review; without it the paper cited eight of its thirty sources and read as a formal model wearing critical theory as a coat.
-3. *The order in which a site sheds what it does* — the first result and the uniform-appropriability null. Carries the parking finding.
-4. *The place empties long before it shuts* — the lead. Short, and the paper's title claim.
-5. *Removing the place removes almost none of the burden* — the second result, with the sweep that keeps it from resting on one emission factor.
-6. *A duty that attaches to staying is cheap to escape* — the notch, then the case. Arranged so the mechanism is computed before the historical instance appears, because the reverse order would look like a model built to fit one document.
-7. *Whether the ordering survives other numbers* — the ensemble, including the figure that goes against the paper.
-8. *Against reading this as nostalgia* — the objection this argument most deserves, met before the limits rather than after.
-9. *What is not being claimed* — five limits, including the retraction of the slogan the seed itself had already retracted.
+1. *Introduction* — the two judgements, appropriability as the central quantity, the distinction from organisational slack, and the status of the model.
+2. *Related work* — rationalisation, rent and the rent gap, automobility, social reproduction, informal public places, and the documentary method, each with the part of the model it informs.
+3. *The model* — footprints, social values and appropriability, and the two orderings.
+4. *Order of removal under rising ground rent* — the operator's order, the social order, the uniform-appropriability null, and loss ratios.
+5. *Removal of seating before closure* — the interval between losing the last way of staying and closure.
+6. *Ecological burden of a meal occasion* — the site's share of the burden and the parameter sweep.
+7. *Obligations attached to on-premises capacity* — scaled duties, threshold duties and the resulting loss ratios.
+8. *The 1966 drive-in case* — the district court record, the reversal and the Supreme Court's statement.
+9. *Robustness of the ordering* — the 800-draw ensemble.
+10. *Historical and interpretive cautions* — nostalgia, the exclusion recorded in the court findings, sectoral history, and the limits of Bataille's argument.
+11. *Limitations* — stipulated parameters, service labour, distribution, preservation, and what the results do not show.
 
 ## Changes the review made
 

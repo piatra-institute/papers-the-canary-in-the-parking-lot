@@ -10,21 +10,21 @@ claims_target: results.json
 repo: git@github.com:piatra-institute/papers-the-canary-in-the-parking-lot.git
 github: https://github.com/piatra-institute/papers-the-canary-in-the-parking-lot
 status: published
-abstract: 'A drive-in can be criticised for what it consumes and mourned for what closes with it; the
-  judgements differ because profitability, ecological cost and lived use are different measures. This
-  paper computes what that separation implies. Each function of a site has a footprint, a social value,
-  and an appropriability: the share of value the operator can charge for. Under rising ground rent functions
-  are dropped in order of private yield per unit footprint, and the five constituting the capacity to
-  remain are the first five dropped, while the thing a public evaluation would drop first is the parking
-  the transaction requires. When appropriability is uniform the two orders are identical, which places
-  the result in that one variable. The canary metaphor therefore acquires a number: nowhere is left to
-  sit at a ground rent of 13.2 and the doors close at 81.9, and when the last seat goes the site still
-  earns 0.588 of its peak profit while having lost 0.423 of its social value. Removing every way of staying
-  reduces the site''s ecological burden by 0.0212, never by more than 0.0377 across 1482 sweep cells,
-  because the burden belongs to journeys the operator neither pays for nor controls. Finally, a duty attaching
-  to the capacity to remain is cheap to escape by removing it: a duty worth 0.0704 of private return buys
-  the removal of 0.3226 of social value. That argument was made and accepted in a United States district
-  court in 1966, then reversed.'
+abstract: 'A drive-in restaurant can be criticised for its land and fuel use and regretted for the social
+  uses lost when it closes. The two judgements concern different quantities: profitability, ecological
+  cost and the uses a place supports. We model a site as a set of functions, each with a footprint, a
+  social value and an appropriability, the share of its value the operator can charge for. Under rising
+  ground rent an operator removes functions in order of private return per unit footprint. The five functions
+  that let people remain on site are removed first, whereas an ordering by social value would first remove
+  the parking the transaction requires. With uniform appropriability the two orders coincide. Seating
+  disappears well before closure: the last way of staying is removed at a ground rent of 13.2 and the
+  site closes at 81.9, and when the last seat goes the site still earns 0.588 of its peak profit while
+  having lost 0.423 of its social value. Removing every way of staying reduces the ecological burden of
+  a meal occasion by 0.0212, and by no more than 0.0377 across 1482 combinations of travel parameters,
+  because most of the burden comes from travel the operator does not control. An obligation triggered
+  by on-premises capacity can be avoided by removing that capacity: a duty worth 0.0704 of private return
+  leads to the removal of 0.3226 of social value. A United States district court accepted an exemption
+  on this basis in 1966, and it was reversed on appeal.'
 build_resources:
 - simulation/output/figures/order.png
 - simulation/output/figures/burden.png

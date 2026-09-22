@@ -1,11 +1,11 @@
 schema: 1
 coverage: reviewed
-reviewed_manuscript_sha256: 66085671aea6e7c639018834eacd07f3de56d0c8b1f9f50a53a5dae498ca94d5
+reviewed_manuscript_sha256: 655d6062474c21a7c62d43d4977ada3084e30ce96d5dfd09b302b470606b687b
 claims:
 - id: rank-correlation
   kind: computation
-  passage: Their rank correlation is 0.556, which is positive, and the paper does not claim that private
-    and social value are opposed.
+  passage: The social ordering differs from the private one without reversing it; the rank correlation
+    between the two is 0.556.
   evidence:
     file: simulation/output/results.json
     run_id: sites
@@ -16,8 +16,8 @@ claims:
     conditions: exhaustive evaluation of the ten stipulated functions over the rent grid
 - id: uniform-null
   kind: computation
-  passage: Set every appropriability to the same number and the two orders become identical, with a rank
-    correlation of exactly 1.000.
+  passage: With appropriability set to the same value for every function, the two orders coincide and
+    the rank correlation is exactly 1.000.
   evidence:
     file: simulation/output/results.json
     run_id: sites
@@ -28,7 +28,8 @@ claims:
     conditions: every appropriability set to 0.5, all else unchanged
 - id: first-cut-loss-ratio
   kind: computation
-  passage: For the first function cut that ratio is 25.0; for the last it is 1.053.
+  passage: The ratio is 25.0 for the first function removed and 1.053 for the last, so the functions removed
+    earliest are those whose removal costs other people the most per unit of the operator's saving.
   evidence:
     file: simulation/output/results.json
     run_id: sites
@@ -39,7 +40,8 @@ claims:
     conditions: exhaustive evaluation of the ten stipulated functions over the rent grid
 - id: last-cut-loss-ratio
   kind: computation
-  passage: For the first function cut that ratio is 25.0; for the last it is 1.053.
+  passage: The ratio is 25.0 for the first function removed and 1.053 for the last, so the functions removed
+    earliest are those whose removal costs other people the most per unit of the operator's saving.
   evidence:
     file: simulation/output/results.json
     run_id: sites
@@ -50,7 +52,7 @@ claims:
     conditions: exhaustive evaluation of the ten stipulated functions over the rent grid
 - id: presence-gone-rent
   kind: computation
-  passage: In the stipulated model the last way of staying disappears at a ground rent of 13.2.
+  passage: The last way of staying disappears at a ground rent of 13.2.
   evidence:
     file: simulation/output/results.json
     run_id: sites
@@ -61,8 +63,8 @@ claims:
     conditions: exhaustive evaluation of the ten stipulated functions over the rent grid
 - id: closure-rent
   kind: computation
-  passage: The business closes, in the sense that what it earns no longer covers the rent on what it still
-    occupies plus the cost of being open at all, at a ground rent of 81.9.
+  passage: The site closes, in the sense that its earnings no longer cover the rent on what it occupies
+    plus the fixed cost of operating, at a ground rent of 81.9, a ratio of 6.20.
   evidence:
     file: simulation/output/results.json
     run_id: sites
@@ -73,7 +75,8 @@ claims:
     conditions: exhaustive evaluation of the ten stipulated functions over the rent grid
 - id: lead-ratio
   kind: computation
-  passage: The ratio is 6.20.
+  passage: The site closes, in the sense that its earnings no longer cover the rent on what it occupies
+    plus the fixed cost of operating, at a ground rent of 81.9, a ratio of 6.20.
   evidence:
     file: simulation/output/results.json
     run_id: sites
@@ -84,7 +87,7 @@ claims:
     conditions: exhaustive evaluation of the ten stipulated functions over the rent grid
 - id: lead-from-first
   kind: computation
-  passage: Measured from the first loss rather than the last, the interval is a factor of 61.4.
+  passage: Measured from the removal of the first way of staying, the ratio is 61.4.
   evidence:
     file: simulation/output/results.json
     run_id: sites
@@ -95,8 +98,7 @@ claims:
     conditions: exhaustive evaluation of the ten stipulated functions over the rent grid
 - id: open-but-empty
   kind: computation
-  passage: The site remains open across 0.839 of the rent range over which it has nowhere for anyone to
-    stay.
+  passage: The site stays open across 0.839 of the rent range while offering nowhere to stay.
   evidence:
     file: simulation/output/results.json
     run_id: sites
@@ -107,7 +109,8 @@ claims:
     conditions: exhaustive evaluation of the ten stipulated functions over the rent grid
 - id: profit-when-empty
   kind: computation
-  passage: It is still earning 0.588 of its peak profit.
+  passage: When the last seat is removed, the site still earns 0.588 of its peak profit and has lost 0.423
+    of its social value, so its accounts show a profitable business.
   evidence:
     file: simulation/output/results.json
     run_id: sites
@@ -118,7 +121,8 @@ claims:
     conditions: read at the rent at which the last way of staying goes
 - id: social-lost-when-empty
   kind: computation
-  passage: It has lost 0.423 of the social value it used to provide.
+  passage: When the last seat is removed, the site still earns 0.588 of its peak profit and has lost 0.423
+    of its social value, so its accounts show a profitable business.
   evidence:
     file: simulation/output/results.json
     run_id: sites
@@ -129,8 +133,8 @@ claims:
     conditions: read at the rent at which the last way of staying goes
 - id: burden-travel
   kind: computation
-  passage: Under the stipulated values the journey is 2.28 and the food 2.50 of a total of 5.00, and the
-    site is 0.22, which is 0.044 of the whole.
+  passage: Under the stipulated values travel accounts for 2.28 and food for 2.50 of a total of 5.00 kg
+    CO$_2$e, and the site for 0.22, or 0.044 of the total.
   evidence:
     file: simulation/output/results.json
     run_id: sites
@@ -141,8 +145,8 @@ claims:
     conditions: stipulated 12 km round trip at 0.19 kg CO2e per km
 - id: burden-food
   kind: computation
-  passage: Under the stipulated values the journey is 2.28 and the food 2.50 of a total of 5.00, and the
-    site is 0.22, which is 0.044 of the whole.
+  passage: Under the stipulated values travel accounts for 2.28 and food for 2.50 of a total of 5.00 kg
+    CO$_2$e, and the site for 0.22, or 0.044 of the total.
   evidence:
     file: simulation/output/results.json
     run_id: sites
@@ -153,8 +157,8 @@ claims:
     conditions: stipulated
 - id: burden-total
   kind: computation
-  passage: Under the stipulated values the journey is 2.28 and the food 2.50 of a total of 5.00, and the
-    site is 0.22, which is 0.044 of the whole.
+  passage: Under the stipulated values travel accounts for 2.28 and food for 2.50 of a total of 5.00 kg
+    CO$_2$e, and the site for 0.22, or 0.044 of the total.
   evidence:
     file: simulation/output/results.json
     run_id: sites
@@ -165,8 +169,8 @@ claims:
     conditions: stipulated
 - id: burden-site
   kind: computation
-  passage: Under the stipulated values the journey is 2.28 and the food 2.50 of a total of 5.00, and the
-    site is 0.22, which is 0.044 of the whole.
+  passage: Under the stipulated values travel accounts for 2.28 and food for 2.50 of a total of 5.00 kg
+    CO$_2$e, and the site for 0.22, or 0.044 of the total.
   evidence:
     file: simulation/output/results.json
     run_id: sites
@@ -177,8 +181,8 @@ claims:
     conditions: stipulated
 - id: design-share
   kind: computation
-  passage: Under the stipulated values the journey is 2.28 and the food 2.50 of a total of 5.00, and the
-    site is 0.22, which is 0.044 of the whole.
+  passage: Under the stipulated values travel accounts for 2.28 and food for 2.50 of a total of 5.00 kg
+    CO$_2$e, and the site for 0.22, or 0.044 of the total.
   evidence:
     file: simulation/output/results.json
     run_id: sites
@@ -189,8 +193,8 @@ claims:
     conditions: stipulated
 - id: base-reduction
   kind: computation
-  passage: Removing every function that lets a person stay, all five of them, reduces the total burden
-    of a meal occasion by 0.0212.
+  passage: Removing all five functions that let people stay reduces the total burden of a meal occasion
+    by 0.0212.
   evidence:
     file: simulation/output/results.json
     run_id: sites
@@ -201,9 +205,9 @@ claims:
     conditions: all five ways of staying removed, stipulated base parameters
 - id: sweep-cells
   kind: computation
-  passage: Because that conclusion should not rest on one choice of emission factor, the calculation was
-    swept across 1482 combinations of round trip length from 2 to 30 kilometres and emissions from 0.05
-    to 0.30 kilograms per kilometre.
+  passage: To check that this result does not depend on one emission factor, the calculation was repeated
+    for 1482 combinations of round-trip length from 2 to 30 kilometres and emissions from 0.05 to 0.30
+    kilograms per kilometre.
   evidence:
     file: simulation/output/results.json
     run_id: sites
@@ -214,7 +218,7 @@ claims:
     conditions: exhaustive sweep of 1482 trip-length and emission-factor combinations
 - id: sweep-max
   kind: computation
-  passage: The reduction never exceeds 0.0377 anywhere on that grid and never falls below 0.00906.
+  passage: The reduction never exceeds 0.0377 and never falls below 0.00906.
   evidence:
     file: simulation/output/results.json
     run_id: sites
@@ -225,7 +229,7 @@ claims:
     conditions: exhaustive sweep of 1482 trip-length and emission-factor combinations
 - id: sweep-min
   kind: computation
-  passage: The reduction never exceeds 0.0377 anywhere on that grid and never falls below 0.00906.
+  passage: The reduction never exceeds 0.0377 and never falls below 0.00906.
   evidence:
     file: simulation/output/results.json
     run_id: sites
@@ -236,8 +240,8 @@ claims:
     conditions: exhaustive sweep of 1482 trip-length and emission-factor combinations
 - id: site-multiple
   kind: computation
-  passage: For the site's own footprint to account for half the burden of a meal occasion, it would have
-    to be 21.8 times heavier than stipulated.
+  passage: The site's own burden would have to be 21.8 times the stipulated value for it to account for
+    half the burden of a meal occasion.
   evidence:
     file: simulation/output/results.json
     run_id: sites
@@ -248,9 +252,9 @@ claims:
     conditions: stipulated trip length and emission factor
 - id: scaled-duty-rate
   kind: computation
-  passage: If the duty scales with the capacity provided, it simply lowers the rent at which that capacity
-    is cut, by exactly its own rate; to remove every way of staying at zero rent pressure would require
-    a duty rate of 13.2, which is large.
+  passage: If the duty scales with the capacity provided, it lowers the rent at which that capacity is
+    removed by exactly its own rate; removing every way of staying at zero rent would require a duty rate
+    of 13.2.
   evidence:
     file: simulation/output/results.json
     run_id: sites
@@ -261,7 +265,8 @@ claims:
     conditions: closed form, checked against the swept grid
 - id: notch-duty-share
   kind: computation
-  passage: The private return sacrificed is 0.0704 of the site's total.
+  passage: The private return given up is 0.0704 of the site's total, so any duty costing more than that
+    is avoided by removing them, at any ground rent including zero.
   evidence:
     file: simulation/output/results.json
     run_id: sites
@@ -272,7 +277,7 @@ claims:
     conditions: duty triggered above a tenth of the site given to staying
 - id: notch-social-share
   kind: computation
-  passage: The social value destroyed in the process is 0.3226 of the site's total.
+  passage: The social value lost is 0.3226 of the site's total.
   evidence:
     file: simulation/output/results.json
     run_id: sites
@@ -283,7 +288,7 @@ claims:
     conditions: duty triggered above a tenth of the site given to staying
 - id: notch-leverage
   kind: computation
-  passage: The ratio of what everyone else loses to what the operator gives up is 4.580.
+  passage: The share of social value lost is 4.580 times the share of private return given up.
   evidence:
     file: simulation/output/results.json
     run_id: sites
@@ -294,9 +299,10 @@ claims:
     conditions: duty triggered above a tenth of the site given to staying
 - id: notch-single-duty
   kind: computation
-  passage: 'Where the notch is placed so that a single function does the job, the ratio equals that function''s
-    own social-to-private ratio: a duty worth 0.00555 of private return removes the ability to meet others
-    without buying, destroying 0.0806 of social value, a ratio of 25.0.'
+  passage: 'Where the threshold is set so that removing one function suffices, this ratio equals that
+    function''s own social-to-private ratio: a duty worth 0.00555 of private return leads to the removal
+    of the opportunity to meet others without buying, with a loss of 0.0806 of social value, a ratio of
+    25.0.'
   evidence:
     file: simulation/output/results.json
     run_id: sites
@@ -308,9 +314,10 @@ claims:
       at which one function alone clears it
 - id: notch-single-social
   kind: computation
-  passage: 'Where the notch is placed so that a single function does the job, the ratio equals that function''s
-    own social-to-private ratio: a duty worth 0.00555 of private return removes the ability to meet others
-    without buying, destroying 0.0806 of social value, a ratio of 25.0.'
+  passage: 'Where the threshold is set so that removing one function suffices, this ratio equals that
+    function''s own social-to-private ratio: a duty worth 0.00555 of private return leads to the removal
+    of the opportunity to meet others without buying, with a loss of 0.0806 of social value, a ratio of
+    25.0.'
   evidence:
     file: simulation/output/results.json
     run_id: sites
@@ -322,9 +329,10 @@ claims:
       at which one function alone clears it
 - id: notch-single-ratio
   kind: computation
-  passage: 'Where the notch is placed so that a single function does the job, the ratio equals that function''s
-    own social-to-private ratio: a duty worth 0.00555 of private return removes the ability to meet others
-    without buying, destroying 0.0806 of social value, a ratio of 25.0.'
+  passage: 'Where the threshold is set so that removing one function suffices, this ratio equals that
+    function''s own social-to-private ratio: a duty worth 0.00555 of private return leads to the removal
+    of the opportunity to meet others without buying, with a loss of 0.0806 of social value, a ratio of
+    25.0.'
   evidence:
     file: simulation/output/results.json
     run_id: sites
@@ -335,8 +343,9 @@ claims:
     conditions: threshold sweep over the share of the site that may be given to staying
 - id: ensemble-draws
   kind: computation
-  passage: Every footprint and every appropriability was perturbed by an independent uniform factor between
-    0.6 and 1.4 and the analysis rerun, 800 times.
+  passage: Because the ordering depends on stipulated numbers, it was tested with an ensemble in which
+    every footprint and every appropriability was multiplied by an independent uniform factor between
+    0.6 and 1.4, 800 times.
   evidence:
     file: simulation/output/results.json
     run_id: sites
@@ -348,7 +357,7 @@ claims:
       uniform factor in [0.6, 1.4]
 - id: ensemble-first
   kind: computation
-  passage: The first function cut is a way of staying in 1.000 of those draws, all 800 of them.
+  passage: The first function removed was a way of staying in 1.000 of the draws, that is, in all 800.
   evidence:
     file: simulation/output/results.json
     run_id: sites
@@ -360,7 +369,8 @@ claims:
       uniform factor in [0.6, 1.4]
 - id: ensemble-within-six
   kind: computation
-  passage: All five ways of staying fall within the first six cut in 0.971 of them.
+  passage: All five ways of staying were among the first six removed in 0.971 of the draws, and in the
+    least favourable draw their mean rank was 3.6 out of ten.
   evidence:
     file: simulation/output/results.json
     run_id: sites
@@ -372,7 +382,8 @@ claims:
       uniform factor in [0.6, 1.4]
 - id: ensemble-worst-rank
   kind: computation
-  passage: In the single worst draw of the 800 the five still average rank 3.6 out of ten.
+  passage: All five ways of staying were among the first six removed in 0.971 of the draws, and in the
+    least favourable draw their mean rank was 3.6 out of ten.
   evidence:
     file: simulation/output/results.json
     run_id: sites
@@ -384,9 +395,8 @@ claims:
       uniform factor in [0.6, 1.4]
 - id: ensemble-exact
   kind: computation
-  passage: 'The exact result reported above, that they are precisely the first five, holds in 0.538, which
-    is the honest figure and the weakest of the four: the tight version of the claim is sensitive to the
-    numbers, and the substance of it is not.'
+  passage: The stronger statement that they are exactly the first five holds in 0.538 of the draws, so
+    the precise ordering is sensitive to the parameters while the general pattern is not.
   evidence:
     file: simulation/output/results.json
     run_id: sites
@@ -398,8 +408,8 @@ claims:
       uniform factor in [0.6, 1.4]
 - id: ensemble-tau-median
   kind: computation
-  passage: The rank correlation between the private and social orders has a median of 0.467 across the
-    ensemble and a maximum of 0.822, never reaching the 1.000 that uniform appropriability would produce.
+  passage: The rank correlation between the private and social orders has a median of 0.467 and a maximum
+    of 0.822, and never reaches the value of 1.000 produced by uniform appropriability.
   evidence:
     file: simulation/output/results.json
     run_id: sites
@@ -411,8 +421,8 @@ claims:
       uniform factor in [0.6, 1.4]
 - id: ensemble-tau-max
   kind: computation
-  passage: The rank correlation between the private and social orders has a median of 0.467 across the
-    ensemble and a maximum of 0.822, never reaching the 1.000 that uniform appropriability would produce.
+  passage: The rank correlation between the private and social orders has a median of 0.467 and a maximum
+    of 0.822, and never reaches the value of 1.000 produced by uniform appropriability.
   evidence:
     file: simulation/output/results.json
     run_id: sites
@@ -424,9 +434,8 @@ claims:
       uniform factor in [0.6, 1.4]; the largest value attained in any draw
 - id: src-appropriability
   kind: source
-  passage: Appropriability is the share of the value something creates that its originator can capture,
-    and the observation that returns follow appropriability rather than value created is the organising
-    insight of the economics of innovation [@teece1986].
+  passage: The concept comes from the economics of innovation, where returns depend on appropriability
+    as well as on the value created [@teece1986].
   evidence:
     citation_id: teece1986
     locator: Title and abstract
@@ -436,9 +445,8 @@ claims:
       abstract establish; the article was not read at page level.
 - id: src-organizational-slack
   kind: source
-  passage: Organizational slack in the behavioural theory of the firm means resources held inside a firm
-    in excess of what production requires, treated as a buffer against shocks or as evidence of agency
-    problems [@cyert1963; @bourgeois1981].
+  passage: In organisational economics, slack refers to resources held within a firm beyond what production
+    requires, usually treated as a buffer against shocks or as evidence of agency costs [@cyert1963; @bourgeois1981].
   evidence:
     citation_id: bourgeois1981
     locator: Title
@@ -447,11 +455,8 @@ claims:
       to distinguish a differently-referenced use of the same word; no finding is drawn from it.
 - id: src-establishments
   kind: source
-  passage: The relevant statutory category was a facility "principally engaged in selling food for consumption
-    on the premises," and the court found that these establishments had "no tables and chairs, or counters,
-    bars or stools... sufficient to accommodate any appreciable number of patrons," that "the service
-    is geared to service in the customers' cars," that "customers are encouraged to consume the food off
-    the premises by its service in disposable containers," and that half of what they sold was eaten elsewhere.
+  passage: The one establishment in the group with tables and chairs, a downtown sandwich shop, was held
+    to be covered, and the five drive-ins were not [@newman1966].
   evidence:
     citation_id: newman1966
     locator: Findings of fact 2; conclusions of law
@@ -461,7 +466,10 @@ claims:
       search API. All quoted phrases were read in that text.
 - id: src-kitchen-windows
   kind: source
-  passage: The findings also record what the exemption was an exemption from.
+  passage: The court found that discrimination at all six establishments was uncontested and completely
+    established by the evidence, and that "the limited Negro customers who are served must place and pick
+    up their orders at the kitchen windows and are not permitted to consume their purchases on the premises"
+    [@newman1966].
   evidence:
     citation_id: newman1966
     locator: Finding of fact 4
@@ -471,7 +479,7 @@ claims:
 - id: src-reversal
   kind: source
   passage: The Court of Appeals reversed the refusal to enjoin discrimination at the drive-ins [@newman1967],
-    and the Supreme Court, reaching the case on the separate question of attorney's fees, stated that
+    and the Supreme Court, which heard the case on the separate question of attorney's fees, stated that
     the district court had "erroneously concluded that Title II does not cover drive-in restaurants of
     the sort involved in this case" [@newman1968].
   evidence:
@@ -484,7 +492,7 @@ claims:
 - id: src-scotus
   kind: source
   passage: The Court of Appeals reversed the refusal to enjoin discrimination at the drive-ins [@newman1967],
-    and the Supreme Court, reaching the case on the separate question of attorney's fees, stated that
+    and the Supreme Court, which heard the case on the separate question of attorney's fees, stated that
     the district court had "erroneously concluded that Title II does not cover drive-in restaurants of
     the sort involved in this case" [@newman1968].
   evidence:
@@ -496,8 +504,8 @@ claims:
       not the coverage question, which the manuscript states.
 - id: src-cobble
   kind: source
-  passage: Service work has a history and an organizational record of its own [@cobble1992], and a fond
-    memory of being served is not a labour history.
+  passage: Service work has its own history and organisation [@cobble1992], and the model does not address
+    whether the loss of a service role benefits or harms the workers concerned.
   evidence:
     citation_id: cobble1992
     locator: Title and subject
@@ -506,9 +514,8 @@ claims:
       existence and subject of the labour history; not read at page level.
 - id: src-sorin
   kind: source
-  passage: The car itself carries the same double character, having been a source of real autonomy and
-    protection for Black travellers under segregation while the establishments it delivered them to turned
-    them away [@sorin2020].
+  passage: The car had a similar double role, giving Black travellers real autonomy and protection under
+    segregation while businesses it took them to refused them service [@sorin2020].
   evidence:
     citation_id: sorin2020
     locator: Title and subject
@@ -518,70 +525,71 @@ claims:
       central argument, which the title and that review establish.
 - id: assume-stipulated-functions
   kind: assumption
-  passage: Its ten functions, their footprints, their social values and their appropriabilities are stipulated
-    and are stated in full; nothing is fitted to any business, no figure here estimates any firm's returns,
-    and no company is named.
+  passage: The model has ten functions whose footprints, social values and appropriabilities are stipulated
+    and listed in full.
   rationale: The ten functions and their three numbers each are chosen for transparency, not estimated.
     A different itemisation of what a roadside site provides would give different magnitudes throughout.
     The ensemble perturbs footprints and appropriabilities but not the list of functions and not the functional
     forms.
 - id: assume-appropriability
   kind: assumption
-  passage: Appropriability is the stipulation everything rests on, and no empirical estimate of it exists
-    for any of these functions; the ensemble varies it rather than defending it, and the direction of
-    the result follows from the argument that some of a site's value is chargeable and some is not, while
-    every magnitude follows from numbers nobody has measured.
+  passage: Appropriability is the central assumption, and no empirical estimate of it exists for any of
+    these functions; the ensemble varies it but cannot validate it.
   rationale: No empirical estimate of the appropriability of any of these functions was found in the search
     recorded in research.md. The direction of the result follows from the argument that some of a site’s
     value is chargeable and some is not; every magnitude follows from numbers nobody has measured.
 - id: assume-burden-parameters
   kind: assumption
-  passage: 'Take a meal occasion at a site reached by car and give it three burdens: the journey, the
-    food, and the site itself.'
+  passage: 'Consider a meal occasion at a site reached by car, with three sources of burden: travel, food
+    and the site itself.'
   rationale: 'The trip length, emission factor, site burden and food burden are stipulated, and no external
     emissions assessment is relied on anywhere in this paper. The sweep across 1482 combinations exists
     because the parameters are invented: the conclusion is that no combination in a wide range changes
     the answer, which is a weaker and safer claim than a calibrated estimate would be.'
 - id: assume-ensemble-range
   kind: assumption
-  passage: Every footprint and every appropriability was perturbed by an independent uniform factor between
-    0.6 and 1.4 and the analysis rerun, 800 times.
+  passage: Because the ordering depends on stipulated numbers, it was tested with an ensemble in which
+    every footprint and every appropriability was multiplied by an independent uniform factor between
+    0.6 and 1.4, 800 times.
   rationale: A uniform factor in [0.6, 1.4] applied independently is a stipulated perturbation scale,
     wide enough to break a knife-edge result and narrow enough to keep the model interpretable. It is
     not a posterior and carries no probabilistic interpretation.
 - id: define-appropriability-here
   kind: definition
-  passage: 'Give each of a site''s functions three numbers: the footprint it occupies in space and time,
-    the social value it creates, and its appropriability.'
+  passage: Each function has a footprint in space and time, a social value, and an appropriability.
   rationale: Stipulative definition internal to the model. Private return is defined as appropriability
     times social value, so the two orderings are not independent constructions and the result is a statement
     about the variation in one parameter. Borrowing Teece’s term for the functions of a site rather than
     for an innovation is this paper’s extension.
 - id: define-slack-distinct
   kind: definition
-  passage: What is at issue here sits outside the firm and buffers nothing for it, accruing instead to
-    users.
+  passage: The capacity studied here lies outside the firm and benefits users, so results from that literature
+    do not carry over.
   rationale: A terminological distinction, made to prevent an incorrect import. Organizational slack denotes
     resources held within a firm in excess of requirements; what this paper prices accrues to users and
     buffers nothing for the operator. No claim about the organizational-slack literature follows from
     anything computed here.
 - id: interpret-generic-not-special
   kind: interpretation
-  passage: This is why the divergence the seed identified is generic rather than special.
+  passage: The combination of lower social value and unchanged ecological burden is therefore the generic
+    outcome for a site reached by car.
   rationale: 'An interpretation of the burden computation, not an additional result. It holds only for
     a site whose burden is dominated by travel and food, which is the stipulated case. A site reached
     on foot, or one whose own construction dominates, would not have this property, and the model says
     what it would take: a site burden some twenty-two times heavier.'
 - id: interpret-incentive-survives-repudiation
   kind: interpretation
-  passage: The holding was repudiated within two years.
+  passage: 'The reasoning was rejected, but the incentive it reveals remains wherever an obligation depends
+    on a threshold of on-premises capacity: the model predicts that the cheapest response is to reduce
+    capacity below the threshold, and the court record shows that response being argued.'
   rationale: 'An interpretation joining the documentary record to the model, and the paper’s most contestable
     move. The 1966 holding was reversed and called erroneous, so nothing here claims the exemption is
     available. The claim is structural: wherever a duty is keyed to a threshold of on-premises capacity,
     the model computes an incentive to fall below it, and the record shows that response being argued.'
 - id: normative-capacity-not-building
   kind: normative
-  passage: The object worth defending is a capacity.
+  passage: The results concern the capacity to stay, which a building, a car park or a vehicle may or
+    may not provide.
   rationale: A normative position the authors take, not a result. The model ranks nothing and prefers
     nothing; it prices functions under a stipulated social value that someone had to choose. A reader
     who weighs these functions differently gets a different ordering, and the paper supplies the machinery
