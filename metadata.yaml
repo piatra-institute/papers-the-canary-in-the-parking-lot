@@ -28,6 +28,7 @@ abstract: 'A drive-in restaurant can be criticised for its land and fuel use and
 build_resources:
 - simulation/output/figures/order.png
 - simulation/output/figures/burden.png
-web_blurb: A site sheds what it does in order of what it can charge for, so the capacity to remain goes
-  first and closure comes last. Removing every way of staying lightens the ecological burden by two per
-  cent, and a duty keyed to staying is cheap to escape by removing it.
+web_blurb: Under rising ground rent a site removes the functions it cannot charge for, so seating and
+  other ways of staying go first and closure comes last. Removing them reduces the ecological burden of
+  a meal by about two per cent, and obligations tied to on-premises capacity can be avoided by removing
+  it.
