@@ -1,5 +1,5 @@
 {
-  "pdf_sha256": "6fdd8f79957e5231870074d99108f3924787c969d06576b8e47fd1f2b4c4c27e",
+  "pdf_sha256": "f78acd69814634623991ad2b5c5380e2d13b185b1e6f64e7870ea5ffdb45cc3e",
   "page_count": 10,
   "pages_inspected": [
     1,
@@ -14,5 +14,5 @@
     10
   ],
   "all_pages_inspected": true,
-  "notes": "All ten pages of the rebuilt PDF were read at full size. Title, abstract and eleven body sections set correctly with descriptive headings; running head and pagination are continuous. Both figures were regenerated. Their panel titles had carried the old aphoristic headings and their annotations editorial phrasing ('the doors close', 'a duty keyed to staying is cheap to dodge', 'what dodging it costs everyone else'); these now state quantities. Inspection also found a factual error in the published figure 1: panel (c) was labelled 'first cut at the top' although the operator's first removal is plotted at the bottom, an axis inversion having been dropped during an earlier layout fix. The label now reads 'first removed at bottom' and the orientation was confirmed against the results file. Panel (a) of figure 2 now uses the same terms as the text (travel, food, site). Figures were inspected as source images and in page context on pages 5 and 7. The bibliography runs pages 8 to 10 with all 30 entries. No overfull lines, clipped figures or orphaned headings."
+  "notes": "All ten pages of the rebuilt PDF were read at full size. Title, abstract and eleven body sections set correctly with descriptive headings; running head and pagination are continuous. Both figures were regenerated. Their panel titles had carried the old aphoristic headings and their annotations editorial phrasing ('the doors close', 'a duty keyed to staying is cheap to dodge', 'what dodging it costs everyone else'); these now state quantities. Inspection also found a factual error in the published figure 1: panel (c) was labelled 'first cut at the top' although the operator's first removal is plotted at the bottom, an axis inversion having been dropped during an earlier layout fix. The label now reads 'first removed at bottom' and the orientation was confirmed against the results file. Panel (a) of figure 2 now uses the same terms as the text (travel, food, site). Figures were inspected as source images and in page context on pages 5 and 7. The bibliography runs pages 8 to 10 with all 30 entries. No overfull lines, clipped figures or orphaned headings. Metadata-only rebuild: the web blurb in metadata.yaml, a hashed build input, changed, so the PDF was re-rendered (6fdd8f79957e to f78acd698146); the rendered text is byte-for-byte identical and no page was re-inspected."
 }
