@@ -1,6 +1,6 @@
 schema: 1
 coverage: reviewed
-reviewed_manuscript_sha256: 655d6062474c21a7c62d43d4977ada3084e30ce96d5dfd09b302b470606b687b
+reviewed_manuscript_sha256: 124b7f88279bd11c6da53a0f6e28037cd9d9793246d5af39e5fc169da4042e00
 claims:
 - id: rank-correlation
   kind: computation
@@ -240,16 +240,16 @@ claims:
     conditions: exhaustive sweep of 1482 trip-length and emission-factor combinations
 - id: site-multiple
   kind: computation
-  passage: The site's own burden would have to be 21.8 times the stipulated value for it to account for
+  passage: The site's own burden would have to be 21.7 times the stipulated value for it to account for
     half the burden of a meal occasion.
   evidence:
     file: simulation/output/results.json
     run_id: sites
     pointer: /burden/site_kg_multiple_needed
-    reported: '21.8'
+    reported: '21.7'
     decimals: 1
     units: multiple of the stipulated site burden
-    conditions: stipulated trip length and emission factor
+    conditions: 'closed form: travel plus food divided by the stipulated site burden'
 - id: scaled-duty-rate
   kind: computation
   passage: If the duty scales with the capacity provided, it lowers the rent at which that capacity is

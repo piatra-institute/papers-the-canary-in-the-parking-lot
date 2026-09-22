@@ -1,10 +1,10 @@
 {
-  "manuscript_sha256": "655d6062474c21a7c62d43d4977ada3084e30ce96d5dfd09b302b470606b687b",
+  "manuscript_sha256": "124b7f88279bd11c6da53a0f6e28037cd9d9793246d5af39e5fc169da4042e00",
   "full_read": true,
   "argument_review": true,
   "structure_review": true,
   "voice_review": true,
   "source_review": true,
   "final_read": true,
-  "notes": "Prose revision against the house standards for plain, declarative scientific writing. The manuscript was reread in full and rewritten paragraph by paragraph with every number, quotation, citation and figure preserved. Aphoristic section titles were replaced by descriptive ones ('The place empties long before it shuts' became 'Removal of seating before closure'; 'A duty that attaches to staying is cheap to escape' became 'Obligations attached to on-premises capacity'; 'The tradition this argues with' became 'Related work'). Three references to the unpublished origin chat ('the seed's compressed slogan', 'the second half of the seed's hypothesis', 'the divergence the seed identified') were removed. Also removed: self-reference ('This paper computes', 'the paper does not claim', twelve instances in all), meta-commentary ('it is worth being precise about which part each supplies', 'The claim is narrower and worse', 'What follows is a model'), the heavy use of 'rather than' (fourteen instances to none) and 'worth' (eleven to two), and epigrammatic closers ('The canary was never outside the mine. It was part of the mine, which is why what happens to it is worth reading'; 'They rank the same ten things. They do not agree.'). The court quotations were kept verbatim. Prose length fell from about 4,000 to about 3,000 words with no result removed. The claim ledger was re-bound and all 52 claims pass."
+  "notes": "Correction following the prose revision. The factor by which the site's own burden would have to grow to account for half the burden of a meal occasion was published as 21.8, the result of a grid search whose first qualifying point overshot the answer. The site is half the burden exactly when it equals travel plus food, so the factor is (2.28 + 2.50) / 0.22 = 21.7. No other value changed."
 }

@@ -311,8 +311,10 @@ def run_burden() -> dict:
         "max_reduction": float(np.max(reductions)),
         "median_reduction": float(np.median(reductions)),
         "reduction_never_exceeds": float(np.max(reductions)),
-        "site_kg_needed_for_half_the_burden": solve_food,
-        "site_kg_multiple_needed": solve_food / SITE_KG if solve_food else None,
+        "site_kg_needed_for_half_the_burden_grid": solve_food,
+        # exact: the site is half the burden when it equals travel plus food
+        "site_kg_needed_for_half_the_burden": base["travel"] + base["food"],
+        "site_kg_multiple_needed": (base["travel"] + base["food"]) / SITE_KG,
         "grid": grid,
     }
 

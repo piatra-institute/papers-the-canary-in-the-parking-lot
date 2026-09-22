@@ -4,6 +4,12 @@ Dated log of editorial passes and verification runs. Newest first.
 
 ## 2026-09-22 — prose revision
 
+Correction of a grid-search value.
+  - The multiple of the site's burden needed for the site to account for half the burden of a meal occasion was published as 21.8. The exact value is (travel + food) / site = 4.78 / 0.22 = 21.7. `simulation/analyses.py` now computes it in closed form and keeps the grid value alongside (26 invariants pass).
+  - Found while auditing the collection for the grid-artifact error corrected in economics-after-cognitive-scarcity. The other thresholds in this paper (the cut rents, the closure rent by bisection, the duty rate) were checked and are exact.
+
+## 2026-09-22 — prose revision
+
 Prose revision against the house standards. No computation, number, quotation, citation or conclusion changed.
   - Manuscript rewritten paragraph by paragraph; prose shortened from about 4,000 to about 3,000 words. Structure is now introduction, related work, model, six results and discussion sections, and limitations.
   - Removed three references to the unpublished origin chat, twelve self-references, meta-commentary, epigrammatic closers, and contrast framing ('rather than' from fourteen instances to none).

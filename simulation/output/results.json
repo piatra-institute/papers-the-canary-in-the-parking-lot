@@ -17127,8 +17127,9 @@
     "max_reduction": 0.037662,
     "median_reduction": 0.0210937,
     "reduction_never_exceeds": 0.037662,
-    "site_kg_needed_for_half_the_burden": 4.7859,
-    "site_kg_multiple_needed": 21.7541,
+    "site_kg_needed_for_half_the_burden_grid": 4.7859,
+    "site_kg_needed_for_half_the_burden": 4.78,
+    "site_kg_multiple_needed": 21.7273,
     "grid": [
       {
         "trip_km": 2.0,
